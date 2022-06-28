@@ -13,9 +13,11 @@ body{
     align-items: center;
     margin: 0px;
     padding: 0px 19px;
-    /* position: sticky; */
+    position: sticky;
     top: 0px;
     left: 0px;
+    z-index: 999;
+    height: 62px;
 }
 #navbar::before{
     content: "";
@@ -26,6 +28,7 @@ body{
     height: 100%;
     width: 100%;
     z-index: -1;
+    filter: drop-shadow(2px 4px 6px grey);
 }
 #navbar .list{
     display: flex;
@@ -384,6 +387,7 @@ a {
 @media screen and (max-width: 715px) {
     #navbar{
         justify-content: center;
+        position: relative;
     }
     #navbar ul{
         padding-left: 0px;
