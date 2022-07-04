@@ -200,6 +200,21 @@ body{
     animation: pro 2s;
     animation-delay: 1s;
     position: relative;
+    display: inline;
+}
+#product h1::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #717fe0;
+    transition: 1s;
+    border-radius: 25px;
+}
+#product:hover h1:after {
+    width: 100%;
 }
 @keyframes pro {
     from {left: -500px; top:0px; font-style: italic;}
@@ -346,6 +361,7 @@ body{
     color: white;
     font-size: 12px;
     margin-top: 12px;
+    cursor: pointer;
 }
 #foot .para{
     text-align: center;
