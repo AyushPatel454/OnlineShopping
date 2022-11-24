@@ -268,9 +268,14 @@ body{
     /* text-decoration: underline; */
     font-size: 15px;
     cursor: pointer;
-    animation: ord 2s;
+    /* animation: ord 2s; */
+    transition: bottom 2s;
+    bottom: -100px;
     animation-iteration-count: infinite;
     border-bottom: 2px solid white;
+}
+#xender .item .temp:hover h3 {
+    bottom: 10px;
 }
 @keyframes ord {
     0% {bottom: -100px;}
